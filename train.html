@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Train Time!</title>
+  <!-- Favicon -->
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Mountains+of+Christmas|Mr+Dafoe" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
   <!-- Moment.js Reference -->
@@ -19,14 +24,14 @@
   <!-- Employee Tracker -->
   <div class="container">
     <!-- Jumbotron -->
-    <div class="jumbotron" style="background-color: grey; color: white">
-      <h1 class="text-center">All Aboard the Schedule Express!</h1>
-      <h3 class="text-center">I think I can, I think I can...find out when the train is arriving</h3>
+    <div class="jumbotron">
+      <h1 class="text-center" id="title">Train Time!</h1>
+      <h3 class="text-center" id="subtitle">I think I can, I think I can...</h3>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <!-- Current Train Schedule-->
-        <div class="panel panel-primary">
+        <div class="panel panel-danger">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
           </div>
@@ -47,7 +52,7 @@
           </div>
         </div>
         <!-- Add Train  -->
-        <div class="panel panel-primary">
+        <div class="panel panel-danger">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Add Train</strong></h3>
           </div>
@@ -70,7 +75,7 @@
                 <label for="frequency-input">Frequency (min)</label>
                 <input class="form-control" id="frequency-input" type="text">
               </div>
-              <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+              <button class="btn btn-warning" id="add-train-btn" type="submit">Submit</button>
             </form>
           </div>
         </div>
