@@ -10,7 +10,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-// 2. Button for adding Employees
+// 2. Button for adding Trains
 $("#add-train-btn").on("click", function() {
 
     // Grabs user input
@@ -31,7 +31,7 @@ $("#add-train-btn").on("click", function() {
     database.ref().push(newTrain);
 
     // Alert
-    alert("Train successfully added");
+    bootbox.alert("Train successfully added!");
 
     // Clears all of the text-boxes
     $("#train-name-input").val("");
